@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wyffels Fresh Angus Beef Cattle Farm Order</title>
+		
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<style>
+				body {
+				background-color: tan;
+				margin: 0;
+				}
+	
+				ul.topnav {
+				  list-style-type: none;
+				  margin: 0;
+				  padding: 0;
+				  overflow: hidden;
+				  background-color: brown;
+				}
+				
+				ul.topnav li {float: left;}
+				
+				ul.topnav li a {
+				  display: block;
+				  color: white;
+				  text-align: center;
+				  padding: 14px 16px;
+				  text-decoration: none;
+				}
+				
+				ul.topnav li a:hover:not(.active) {background-color: brown;}
+				
+				ul.topnav li a.active {background-color: black;}
+				
+				ul.topnav li.right {float: right;}
+				
+				@media screen and (max-width: 600px) {
+				  ul.topnav li.right, 
+				  ul.topnav li {float: none;}
+				}
+				
+							* {
+				  box-sizing: border-box;
+				}
+				
+				input[type=text], select, textarea {
+				  width: 100%;
+				  padding: 12px;
+				  border: 1px solid #ccc;
+				  border-radius: 4px;
+				  resize: vertical;
+				}
+				
+				label {
+				  padding: 12px 12px 12px 0;
+				  display: inline-block;
+				}
+				
+				input[type=submit] {
+				  background-color: #gray;
+				  color: white;
+				  padding: 12px 20px;
+				  border: none;
+				  border-radius: 4px;
+				  cursor: pointer;
+				  float: right;
+				}
+				
+				input[type=submit]:hover {
+				  background-color: #45a049;
+				}
+				
+				.container {
+				  border-radius: 5px;
+				  background-color: tan;
+				  padding: 20px;
+				}
+				
+				.col-25 {
+				  float: left;
+				  width: 25%;
+				  margin-top: 6px;
+				}
+				
+				.col-50 {
+				  float: left;
+				  width: 50%;
+				  margin-top: 6px;
+				}
+				
+				.col-75 {
+				  float: left;
+				  width: 75%;
+				  margin-top: 6px;
+				}
+				
+				/* Clear floats after the columns */
+				.row::after {
+				  content: "";
+				  display: table;
+				  clear: both;
+				}
+				
+				/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+				@media screen and (max-width: 600px) {
+				  .col-25, .col-75, input[type=submit] {
+					width: 100%;
+					margin-top: 0;
+				  }
+				}
+				
+			</style>
+		
+	</head>
+	<body>
+		<ul class="topnav">
+			  <li><a class="active" href="Home.html">Home</a></li>
+			  <li><a href="Order.html"">Order</a></li>
+			  <li><a href="Contact.html">Contact</a></li>
+			  <li class="right"><a href="About.html">About</a></li>
+			</ul>
+
+		<div class="container">
+		  <form action="OrderPage.php" method="POST">
+		  <div class="row">
+			<div class="col-25">
+			  <label for="firstname">Customer Name</label>
+			</div>
+			<div class="col-75">
+			  <input type="text" id="firstname" name="firstname" placeholder="Your name...">
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-25">
+			  <label for="phonenumber">Phone Number</label>
+			</div>
+			<div class="col-75">
+			  <input type="text" id="phonenumber" name="phonenumber" placeholder="Your number...">
+			</div>
+		  </div>
+		  <br>
+		  <div class="row">
+			<div class="col-25">
+			  <label for="Beefselection1">Beef Selection 1</label>
+			</div>
+			 <div class="row">
+			<div class="col-75">
+			  <select id="Beefselection1" name="Beefselection1">
+				<option value="wholecow1">Whole Cow</option>
+				<option value="halfcow1">Half Cow</option>
+				<option value="quartercow1">Quarter Cow</option>
+				<option value="hamburger1">Hamburger (in lbs.)</option>
+				<option value="chuck1">Chuck (in lbs.)</option>
+				<option value="rib1">Rib (in lbs.)</option>
+				<option value="loin1">Loin (in lbs.)</option>
+				<option value="sirloin1">Sirloin (in lbs.)</option>
+				<option value="round1">Round (in lbs.)</option>
+				<option value="brisket1">Brisket (in lbs.)</option>
+				<option value="shortribs1">Short Ribs (in lbs.)</option>
+				<option value="flank1">Flank (in lbs.)</option>
+			  </select>
+			  <select id="QuantityNo1" name="QuantityNo1">
+			    <option value="1ofNo1">1</option>
+				<option value="2ofNo1">2</option>
+				<option value="3ofNo1">3</option>
+				<option value="4ofNo1">4</option>
+				<option value="5ofNo1">5</option>
+				<option value="6ofNo1">6</option>
+				<option value="7ofNo1">7</option>
+				<option value="8ofNo1">8</option>
+				<option value="9ofNo1">9</option>
+				<option value="10ofNo1">10</option>
+				<option value="11ofNo1">11</option>
+				<option value="12ofNo1">12</option>
+				<option value="13ofNo1">13</option>
+				<option value="14ofNo1">14</option>
+				<option value="15ofNo1">15</option>
+				<option value="16ofNo1">16</option>
+				<option value="17ofNo1">17</option>
+				<option value="18ofNo1">18</option>
+				<option value="19ofNo1">19</option>
+				<option value="20ofNo1">20</option>
+			   </select>
+			</div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-25">
+			  <label for="Beefselection2">Beef Selection 2</label>
+			</div>
+			<div class="col-75">
+			  <select id="Beefselection2" name="Beefselection2">
+				<option value="~2">~</option>
+				<option value="wholecow2">Whole Cow</option>
+				<option value="halfcow2">Half Cow</option>
+				<option value="quartercow2">Quarter Cow</option>
+				<option value="hamburger2">Hamburger (in lbs.)</option>
+				<option value="chuck2">Chuck (in lbs.)</option>
+				<option value="rib2">Rib (in lbs.)</option>
+				<option value="loin2">Loin (in lbs.)</option>
+				<option value="sirloin2">Sirloin (in lbs.)</option>
+				<option value="round2">Round (in lbs.)</option>
+				<option value="brisket2">Brisket (in lbs.)</option>
+				<option value="shortribs2">Short Ribs (in lbs.)</option>
+				<option value="flank2">Flank (in lbs.)</option>
+			  </select>
+			  <select id="QuantityNo2" name="QuantityNo2">
+			    <option value="0ofNo2">0</option>
+			    <option value="1ofNo2">1</option>
+				<option value="2ofNo2">2</option>
+				<option value="3ofNo2">3</option>
+				<option value="4ofNo2">4</option>
+				<option value="5ofNo2">5</option>
+				<option value="6ofNo2">6</option>
+				<option value="7ofNo2">7</option>
+				<option value="8ofNo2">8</option>
+				<option value="9ofNo2">9</option>
+				<option value="10ofNo2">10</option>
+				<option value="11ofNo2">11</option>
+				<option value="12ofNo2">12</option>
+				<option value="13ofNo2">13</option>
+				<option value="14ofNo2">14</option>
+				<option value="15ofNo2">15</option>
+				<option value="16ofNo2">16</option>
+				<option value="17ofNo2">17</option>
+				<option value="18ofNo2">18</option>
+				<option value="19ofNo2">19</option>
+				<option value="20ofNo2">20</option>
+			   </select>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-25">
+			  <label for="Beefselection3">Beef Selection 3</label>
+			</div>
+			<div class="col-75">
+			  <select id="Beefselection3" name="Beefselection3">
+				<option value="~3">~</option>
+				<option value="wholecow3">Whole Cow</option>
+				<option value="halfcow3">Half Cow</option>
+				<option value="quartercow3">Quarter Cow</option>
+				<option value="hamburger3">Hamburger (in lbs.)</option>
+				<option value="chuck3">Chuck (in lbs.)</option>
+				<option value="rib3">Rib (in lbs.)</option>
+				<option value="loin3">Loin (in lbs.)</option>
+				<option value="sirloin3">Sirloin (in lbs.)</option>
+				<option value="round3">Round (in lbs.)</option>
+				<option value="brisket3">Brisket (in lbs.)</option>
+				<option value="shortribs3">Short Ribs (in lbs.)</option>
+				<option value="flank3">Flank (in lbs.)</option>
+			  </select>
+			  <select id="QuantityNo3" name="QuantityNo3">
+			    <option value="0ofNo3">0</option>
+			    <option value="1ofNo3">1</option>
+				<option value="2ofNo3">2</option>
+				<option value="3ofNo3">3</option>
+				<option value="4ofNo3">4</option>
+				<option value="5ofNo3">5</option>
+				<option value="6ofNo3">6</option>
+				<option value="7ofNo3">7</option>
+				<option value="8ofNo3">8</option>
+				<option value="9ofNo3">9</option>
+				<option value="10ofNo3">10</option>
+				<option value="11ofNo3">11</option>
+				<option value="12ofNo3">12</option>
+				<option value="13ofNo3">13</option>
+				<option value="14ofNo3">14</option>
+				<option value="15ofNo3">15</option>
+				<option value="16ofNo3">16</option>
+				<option value="17ofNo3">17</option>
+				<option value="18ofNo3">18</option>
+				<option value="19ofNo3">19</option>
+				<option value="20ofNo3">20</option>
+			   </select>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-25">
+			  <label for="Beefselection4">Beef Selection 4</label>
+			</div>
+			<div class="col-75">
+			  <select id="Beefselection4" name="Beefselection4">
+				<option value="~4">~</option>
+				<option value="wholecow4">Whole Cow</option>
+				<option value="halfcow4">Half Cow</option>
+				<option value="quartercow4">Quarter Cow</option>
+				<option value="hamburger4">Hamburger (in lbs.)</option>
+				<option value="chuck4">Chuck (in lbs.)</option>
+				<option value="rib4">Rib (in lbs.)</option>
+				<option value="loin4">Loin (in lbs.)</option>
+				<option value="sirloin4">Sirloin (in lbs.)</option>
+				<option value="round4">Round (in lbs.)</option>
+				<option value="brisket4">Brisket (in lbs.)</option>
+				<option value="shortribs4">Short Ribs (in lbs.)</option>
+				<option value="flank4">Flank (in lbs.)</option>
+			  </select>
+			  <select id="QuantityNo4" name="QuantityNo4">
+			    <option value="0ofNo4">0</option>
+			    <option value="1ofNo4">1</option>
+				<option value="2ofNo4">2</option>
+				<option value="3ofNo4">3</option>
+				<option value="4ofNo4">4</option>
+				<option value="5ofNo4">5</option>
+				<option value="6ofNo4">6</option>
+				<option value="7ofNo4">7</option>
+				<option value="8ofNo4">8</option>
+				<option value="9ofNo4">9</option>
+				<option value="10ofNo4">10</option>
+				<option value="11ofNo4">11</option>
+				<option value="12ofNo4">12</option>
+				<option value="13ofNo4">13</option>
+				<option value="14ofNo4">14</option>
+				<option value="15ofNo4">15</option>
+				<option value="16ofNo4">16</option>
+				<option value="17ofNo4">17</option>
+				<option value="18ofNo4">18</option>
+				<option value="19ofNo4">19</option>
+				<option value="20ofNo4">20</option>
+			   </select>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-25">
+			  <label for="Beefselection5">Beef Selection 5</label>
+			</div>
+			<div class="col-75">
+			  <select id="Beefselection5" name="Beefselection5">
+				<option value="~5">~</option>
+				<option value="wholecow5">Whole Cow</option>
+				<option value="halfcow5">Half Cow</option>
+				<option value="quartercow5">Quarter Cow</option>
+				<option value="hamburger5">Hamburger (in lbs.)</option>
+				<option value="chuck5">Chuck (in lbs.)</option>
+				<option value="rib5">Rib (in lbs.)</option>
+				<option value="loin5">Loin (in lbs.)</option>
+				<option value="sirloin5">Sirloin (in lbs.)</option>
+				<option value="round5">Round (in lbs.)</option>
+				<option value="brisket5">Brisket (in lbs.)</option>
+				<option value="shortribs5">Short Ribs (in lbs.)</option>
+				<option value="flank5">Flank (in lbs.)</option>
+			  </select>
+			  <select id="QuantityNo5" name="QuantityNo5">
+			    <option value="0ofNo5">0</option>
+			    <option value="1ofNo5">1</option>
+				<option value="2ofNo5">2</option>
+				<option value="3ofNo5">3</option>
+				<option value="4ofNo5">4</option>
+				<option value="5ofNo5">5</option>
+				<option value="6ofNo5">6</option>
+				<option value="7ofNo5">7</option>
+				<option value="8ofNo5">8</option>
+				<option value="9ofNo5">9</option>
+				<option value="10ofNo5">10</option>
+				<option value="11ofNo5">11</option>
+				<option value="12ofNo5">12</option>
+				<option value="13ofNo5">13</option>
+				<option value="14ofNo5">14</option>
+				<option value="15ofNo5">15</option>
+				<option value="16ofNo5">16</option>
+				<option value="17ofNo5">17</option>
+				<option value="18ofNo5">18</option>
+				<option value="19ofNo5">19</option>
+				<option value="20ofNo5">20</option>
+			   </select>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-25">
+			  <label for="paymentmethod">Payment Method</label>
+			</div>
+			<div class="col-75">
+			  <select id="paymentmethod" name="paymentmethod">
+				<option value="cash">Cash</option>
+				<option value="check">Check</option>
+				<option value="venmo">Venmo</option>
+			  </select>
+			</div>
+		  </div>
+	 <div class="row">
+			<div class="col-25">
+			  <label for="pickup">Pickup</pickup>
+			</div>
+			<div class="col-75">
+			  <select id="PickupMonth" name="PickupMonth">
+				<option value="january">January</option>
+				<option value="february">February</option>
+				<option value="march">March</option>
+				<option value="april">April</option>
+				<option value="may">May</option>
+				<option value="june">June</option>
+				<option value="july">July</option>
+				<option value="august">August</option>
+				<option value="september">September</option>
+				<option value="october">October</option>
+				<option value="november">November</option>
+				<option value="december">December</option>
+			  </select>
+			  <select id="PickupDay" name="PickupDay">
+				<option value="Day1">1</option>
+				<option value="Day2">2</option>
+				<option value="Day3">3</option>
+				<option value="Day4">4</option>
+				<option value="Day5">5</option>
+				<option value="Day6">6</option>
+				<option value="Day7">7</option>
+				<option value="Day8">8</option>
+				<option value="Day9">9</option>
+				<option value="Day10">10</option>
+				<option value="Day11">11</option>
+				<option value="Day12">12</option>
+				<option value="Day13">13</option>
+				<option value="Day14">14</option>
+				<option value="Day15">16</option>
+				<option value="Day17">17</option>
+				<option value="Day18">18</option>
+				<option value="Day19">19</option>
+				<option value="Day20">20</option>
+				<option value="Day21">21</option>
+				<option value="Day22">22</option>
+				<option value="Day23">23</option>
+				<option value="Day24">24</option>
+				<option value="Day25">25</option>
+				<option value="Day26">26</option>
+				<option value="Day27">27</option>
+				<option value="Day28">28</option>
+			  </select>
+			  <select id="PickupTime" name="PickupTime">
+				<option value="8AM">8:00 AM</option>
+				<option value="815AM">8:15 AM</option>
+				<option value="830AM">8:30 AM</option>
+				<option value="845AM">8:45 AM</option>
+				<option value="9AM">9:00 AM</option>
+				<option value="915AM">9:15 AM</option>
+				<option value="930AM">9:30 AM</option>
+				<option value="945AM">9:45 AM</option>
+				<option value="1000AM">10 AM</option>
+				<option value="1015AM">10:15 AM</option>
+				<option value="1030AM">10:30 AM</option>
+				<option value="1045AM">10:45 AM</option>
+				<option value="1100AM">11:00 AM</option>
+				<option value="1115AM">11:15 AM</option>
+				<option value="1130AM">11:30 AM</option>
+				<option value="1145AM">11:45 AM</option>
+				<option value="1200PM">12:00 PM</option>
+				<option value="1215 PM">12:15 PM</option>
+				<option value="1230 PM">12:30 PM</option>
+				<option value="1245 PM">12:45 PM</option>
+				<option value="100PM">1:00 PM</option>
+				<option value="115PM">1:15 PM</option>
+				<option value="130PM">1:30 PM</option>
+				<option value="145">1:45 PM</option>
+				<option value="200PM">2:00 PM</option>
+				<option value="215PM">2:15 PM</option>
+				<option value="230PM">2:30 PM</option>
+				<option value="245PM">2:45 PM</option>
+				<option value="300PM">3:00 PM</option>
+				<option value="315PM">3:15 PM</option>
+				<option value="330PM">3:30 PM</option>
+				<option value="345PM">3:45 PM</option>
+				<option value="400PM">4:00 PM</option>
+				<option value="415PM">4:15 PM</option>
+				<option value="430PM">4:30 PM</option>
+				<option value="445PM">4:45 PM</option>
+				<option value="500PM">5:00 PM</option>
+				<option value="515PM">5:15 PM</option>
+				<option value="530PM">5:30 PM</option>
+				<option value="545PM">5:45 PM</option>
+				<option value="6PM">6:00 PM</option>
+			  </select>
+			</div>
+		  </div>
+		  <br>
+		  <div class="row">
+			<input type="submit" value="Submit">
+		  </div>
+		  </form>
+		</div>
+	</body>
+</html>
