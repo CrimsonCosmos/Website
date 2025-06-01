@@ -1,5 +1,7 @@
-{
-16:24:45.259	    "name": "worker-name",
-16:24:45.259	    "compatibility_date": "2025-06-01",
-16:24:45.260	    "main": "src/index.ts"
-16:24:45.260	  }
+ {
+16:28:09.605	    "name": "worker-name",
+16:28:09.605	    "compatibility_date": "2025-06-01",
+16:28:09.606	    "assets": {
+16:28:09.606	      "directory": "./dist"
+16:28:09.609	    }
+16:28:09.609	  }
